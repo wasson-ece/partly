@@ -1,0 +1,12 @@
+{
+    "name": "wasson-ece/partly",
+    "description": "A Laravel package to work with parts.",
+    "authors": [
+        {
+            "name": "Chip Wasson",
+            "email": "chip_wasson@wasson-ece.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
