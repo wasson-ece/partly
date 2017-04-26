@@ -17,4 +17,9 @@ class Part extends Model
     {
         return $this->translations()->where('language',$language);
     }
+
+    public static function exists($partNumber, $partRevision = "")
+    {
+        return count(static::where('number', $partNumber)->where('revision', $partRevision)->get());
+    }
 }
