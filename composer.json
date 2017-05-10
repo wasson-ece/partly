@@ -9,10 +9,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "wasson-ece/php-enum":"dev"
+        "wasson-ece/php-enum":"dev-master"
     },
     "require-dev": {
-        "wasson-ece/php-enum":"dev"
+        "wasson-ece/php-enum":"dev-master"
     },
     "autoload": {
         "psr-4": {
