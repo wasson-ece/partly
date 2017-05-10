@@ -8,7 +8,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "wasson-ece/php-enum":"dev"
+    },
+    "require-dev": {
+        "wasson-ece/php-enum":"dev"
+    },
     "autoload": {
         "psr-4": {
             "Wasson_ECE\\Partly\\": "src"
