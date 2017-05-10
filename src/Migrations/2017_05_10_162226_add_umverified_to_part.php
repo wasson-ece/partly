@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Wasson_ECE\Partly\Enums\UMVerified;
 
 class AddUmverifiedToPart extends Migration
 {
@@ -14,7 +15,7 @@ class AddUmverifiedToPart extends Migration
     public function up()
     {
         Schema::table('partly_part', function (Blueprint $table) {
-            $table->integer('UMVerified')->default(0);
+            $table->integer('UMVerified')->default(UMVerified::NotFlagged);
         });
     }
 
