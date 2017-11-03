@@ -27,8 +27,6 @@ class CreatePartlyPart extends Migration
             $table->string('costEach')->nullable();
             $table->string('extendedCost')->nullable();
             $table->string('commercialValue')->nullable();
-            $table->string('globallyHarmonizedCode')->nullable();
-            $table->string('taricCode')->nullable();
             $table->string('weight')->nullable();
             $table->timestamps();
         });

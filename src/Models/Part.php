@@ -18,6 +18,16 @@ class Part extends Model
         return $this->translations()->where('language',$language);
     }
 
+    public function customsCodes()
+    {
+        return $this->hasMany(CustomsCode::class);
+    }
+
+    public function customsCode(int $type)
+    {
+        return $this->customsCodes()->where('type',$type);
+    }
+
     public static function exists($partNumber, $partRevision = "")
     {
         return count(static::where('number', $partNumber)->where('revision', $partRevision)->get());
