@@ -15,9 +15,9 @@ class CreateCustomsCode extends Migration
     {
         Schema::create('partly_customs_code', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('part_id');
+            $table->integer('part_id')->unsigned()->nullable();
             $table->foreign('part_id')->references('id')
-                ->on('partly_parts');
+                ->on('partly_part')->onDelete('cascade');
             $table->integer('type');
             $table->string('value');
             $table->datetime('verified_date')->nullable();
