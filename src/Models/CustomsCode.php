@@ -4,7 +4,7 @@ namespace Wasson_ECE\Partly;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PartTranslation extends Model
+class CustomsCode extends Model
 {
     protected $table = "partly_customs_code";
 
