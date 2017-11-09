@@ -28,6 +28,7 @@ class CreatePartlyPart extends Migration
             $table->string('extendedCost')->nullable();
             $table->string('commercialValue')->nullable();
             $table->string('weight')->nullable();
+            $table->integer('obsolete')->default(0);
             $table->timestamps();
         });
     }
