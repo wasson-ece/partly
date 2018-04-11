@@ -15,6 +15,7 @@ class AddNumRevIndexToPartlyPart extends Migration
     {
         Schema::table('partly_part', function (Blueprint $table) {
             $table->index(['number', 'revision']);
+            $table->string('revision')->nullable(false)->change();
         });
     }
 
@@ -27,6 +28,7 @@ class AddNumRevIndexToPartlyPart extends Migration
     {
         Schema::table('partly_part', function (Blueprint $table) {
             $table->dropIndex(['number', 'revision']);
+            $table->string('revision')->nullable(true)->change();
         });
     }
 }
