@@ -14,7 +14,7 @@ class AddSoftDeleteTOPart extends Migration
     public function up()
     {
         Schema::table('partly_part', function (Blueprint $table) {
-            $table->string('name_suffix')->nullable();
+            $table->string('deleted_at')->nullable();
         });
     }
 
