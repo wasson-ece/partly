@@ -10,7 +10,7 @@ class Part extends Model
 {
     use SoftDeletes;
     protected $table = "partly_part";
-    protected $with = ['customsCodes'];
+    protected $with = ['customsCodes', 'translations'];
 
     public function translations()
     {
